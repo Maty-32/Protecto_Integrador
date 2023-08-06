@@ -1,11 +1,12 @@
 @import "../components/colors";
+@import "../base/typography";
 /* ------------------------------------------------- */
 /* HEADER                                            */
 /* ------------------------------------------------- */
 
 .main-header {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     width: 100%;
 
     @media (max-width: 768px) {
@@ -38,6 +39,7 @@
         display: flex;
         list-style-type: none;
         justify-content: center;
+        height: 5em;    
 
 
         @media (max-width: 768px) {
@@ -49,14 +51,17 @@
 
     &__nav-item {
         text-align: center;
-        background-color: pink;
+        background-color: $color-header-amarillo;
+        position: relative;
     }
 
-    &__nav-link {
+    &__nav-link { 
+        margin: 1.5em 0;
         display: block;
         background-color: $color-header-amarillo;
-        color: #fff;
-        padding: 1em 2em;
+        color: #ffffff;
+        font-size: 1.1em;
+        padding: 0em 2em;
         text-decoration: none;
     }
 
@@ -86,10 +91,14 @@
 
     &__logo-container {
         background-color: $color-header-amarillo;
-        margin-left: 3em;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        color: #fff;
         img{
             width: 3em;
         }
+
     }
 
     &__form-container {
@@ -106,7 +115,8 @@
 
     &__form-search {
         background-color: $color-header-amarillo;
-        width: 50%;
+        width: 100%;
+        justify-content: right;
         border: none;
         outline: none;
         height: 3em;
@@ -115,6 +125,11 @@
         
         &::placeholder{
             color:$color-search ;
+        }
+        @media (max-width: 768px) {
+            & {
+                display: none;
+            }
         }
     }
 
