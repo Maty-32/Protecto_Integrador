@@ -6,7 +6,7 @@
 
 .main-header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     width: 100%;
 
     @media (max-width: 768px) {
@@ -33,13 +33,15 @@
 /* ------------------------------------------------- */
 
 .nav-bar {
-    background-color: $color-blanco;
+    background-color: $color-search;
 
     &__nav-list { /* .nav-bar__nav-list */
         display: flex;
         list-style-type: none;
         justify-content: center;
-        height: 5em;    
+        height: 2em;
+        background-color: $color-header;  
+        border-top: 1px #fff double;  
 
 
         @media (max-width: 768px) {
@@ -51,19 +53,24 @@
 
     &__nav-item {
         text-align: center;
-        background-color: $color-header-amarillo;
-        position: relative;
+        background-color: $color-header;
+        :hover{
+            color: $color-rosa;
+        }
     }
 
-    &__nav-link { 
-        margin: 1.5em 0;
+    &__nav-link {
+        margin:0em 0;
         display: block;
-        background-color: $color-header-amarillo;
-        color: #ffffff;
-        font-size: 1.1em;
-        padding: 0em 2em;
+        background-color: $color-header;
+        color: $color-search;
+        font-size: 1.4em;
+        padding: 0em 1.8em;
         text-decoration: none;
+
+
     }
+
 
     @media (max-width: 768px) {
         & {
@@ -78,7 +85,7 @@
 /* ------------------------------------------------- */
 
 .search-bar {
-    background-color: $color-header-amarillo;
+    background-color: $color-header;
     display: flex;
     width: 100%;
     height: 5em;
@@ -90,9 +97,9 @@
     } 
 
     &__logo-container {
-        background-color: $color-header-amarillo;
+        background-color: $color-header;
         justify-content: center;
-        width: 100%;
+        width:25%;
         display: flex;
         color: #fff;
         img{
@@ -102,7 +109,7 @@
     }
 
     &__form-container {
-        background-color: $color-header-amarillo;
+        background-color: $color-header;
         display: flex;
         flex-basis: 100%; /* width: 100% */
         justify-content: center;
@@ -114,17 +121,20 @@
     }
 
     &__form-search {
-        background-color: $color-header-amarillo;
-        width: 100%;
+        font-family: 'Marcellus', serif;
+        background-color: $color-header;
+        width: 80%;
         justify-content: right;
         border: none;
         outline: none;
         height: 3em;
-        color: $color-blanco;
+        color: $color-search;
         border-bottom: 2px $color-search solid ;
         
         &::placeholder{
             color:$color-search ;
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 1.4em;
         }
         @media (max-width: 768px) {
             & {
@@ -138,13 +148,12 @@
     }
 
     &__carrito-container {
-        background-color: $color-header-amarillo;  
-        margin: 0em 3em 0em;        
-        justify-content: center;
-        align-items: center;
+        background-color: $color-header;  
+        margin: 1em 3em 0em;        
+        cursor: pointer;
         img{
-            width: 4em;
-            height: 4em;
+            width: 2.5em;
+            height: 2.5em;
         }     
     }
 }

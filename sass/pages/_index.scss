@@ -1,6 +1,20 @@
+@import "../components/colors";
+
+main{
+    font-family: 'Marcellus', serif;
+}
 .section-cards {
-    background-color: #f1f2f3;
+    background-color: $color-back-index;
     padding: 1em;
+
+   &__header{
+    margin: 1em 2em;
+
+    h1{
+        font-size: 2em;
+        
+    }
+   }
 }
 
 .cards-container {
