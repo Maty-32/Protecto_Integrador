@@ -1,56 +1,42 @@
 @import "../components/colors";
+@import "../base/typography";
 .card {
     outline: none;
     width: 220px;
     max-width: 300px;
     height: 400px;
+    text-decoration: none;
     overflow: hidden;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-color: orange;
-    box-shadow: 0 1px 5px $color-back-index, 0 0 3px $color-back-index;
+    background-color: $color-card-grey;
+    box-shadow: 0 1px 5px $color-card-grey, 0 0 3px $color-back-index;
+    background-image: $color-card-grey;
 
     transition: all .2s; /* No puede ser all */
 
     &:hover, /* .card:hover */
     &:focus {
-        transform: scale(1.03) skew(0);
-        transform-origin: bottom;
         box-shadow: 0 7px 8px $color-rosa, 0 3px 3px $color-rosa;
     }
 
-    &:nth-child(5n + 1) {
-        background-image: linear-gradient(to top, #aaafad 0%, #60efff 30%);
-    }
-
-    &:nth-child(5n + 2) {
-        background-image: linear-gradient(to top, #696eff 0%, #f8accf 30%);
-    }
-
-    &:nth-child(5n + 3) {
-        background-image: linear-gradient(to top, #ff1b6b 0%, #34caff 30%);
-    }
-
-    &:nth-child(5n + 4) {
-        background-image: linear-gradient(to top, #ff930f 0%, #fff95b 30%);
-    }
-
-    &:nth-child(5n + 5) {
-        background-image: linear-gradient(to top, #ff0f7b 0%, #f89b29 30%);
-    }
 
     &__image-container {
-        height: 200px;
-        background-color: blue;
+        height: 300px;
+        background-color: #464646;
         overflow: hidden;
-        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px); /* estado inicial */
+        clip-path: polygon(0 0, 100% 0,100% 300px, 0 280px); /* estado inicial */
 
     }
+    &__description{
+        color: $color-card-letras;
+        font-size: 1em;
+    }
 
-    &:hover &__image-container,
+/*     &:hover &__image-container,
     &:focus &__image-container {
-        clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px); /* estado final */
-    }
+        clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px); /* estado final 
+    } */
 
     &__image {
         width: 100%;
@@ -61,14 +47,20 @@
 
     &:hover &__image,
     &:focus &__image {
-        transform: scale(1.4) rotate(5deg);
+        transform: scale(1.08);
         transform-origin: center;
     }
 
     &__content {
-        padding: 1em;
-    }
+        padding: 0.5em;
 
+        
+    }
+    &_heading{
+            font-size: 1.5em;
+            color: $color-card-letras;
+            
+        }
     @media (min-width: 1024px) {
         & { /* .card */
             min-width: 240px;

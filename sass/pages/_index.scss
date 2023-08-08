@@ -6,7 +6,12 @@ main{
 .section-cards {
     background-color: $color-back-index;
     padding: 1em;
-
+    .section-cards__header{
+        h1{
+            text-align: center;
+        }
+            
+    }
    &__header{
     margin: 1em 2em;
 
