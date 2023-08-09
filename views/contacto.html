@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Proyecto integrador - CONTACTO</title>
+  <link rel="icon" href="../img/header/logo2.jpeg">
+  <title>Contacto-DS</title>
 </head>
 
 <body>
+
 
   <header class="main-header">
     <input type="checkbox" id="menu">
@@ -15,7 +17,7 @@
     <nav class="nav-bar"> <!-- nav-bar -->
       <ul class="nav-bar__nav-list">
         <li class="nav-bar__nav-item">
-          <a href="#" class="nav-bar__nav-link">Inicio</a>
+          <a href="../index.html" class="nav-bar__nav-link">Inicio</a>
         </li>
         <li class="nav-bar__nav-item">
           <a href="#" class="nav-bar__nav-link">Alta</a>
@@ -29,11 +31,46 @@
       </ul>
     </nav> <!-- nav-bar -->
 
-
+    <div class="search-bar"> <!-- search-bar -->
+      <div class="search-bar__logo-container"><img src="../img/header/logo.jpeg" alt="Logo Mango"></div>
+      <form action="#" class="search-bar__form-container">
+        <label for="busqueda" class="search-bar__form-label"></label>
+        <input type="search" class="search-bar__form-search" id="busqueda" placeholder="Buscar...">
+        <input type="submit" class="search-bar__form-submit" value="Buscar">
+      </form>
+      <div class="search-bar__carrito-container"><img src="../img/header/cart_icon.png" alt=""></div>
+      <div class="menu-toogle">
+        <label for="menu" class="menu-toogle__label">
+          <span class="menu-toogle__top-bread"></span>
+          <span class="menu-toogle__meat"></span>
+          <span class="menu-toogle__bottom-bread"></span>
+        </label>
+      </div>
+    </div> <!-- search-bar -->
   </header>
 
+  <main>
+    <form action="#" method="POST">
 
-  
+      <legend>Dejanos tu consulta</legend>
+      <label id="name">
+        <input type="text" name="name" placeholder="Nombre" required>
+      </label>
+      <label id="last name">
+        <input type="text" name="last name" placeholder="Apellido" required>
+      </label>
+      <label id="phono">
+        <input type="number" name="phono" placeholder="Numero de telefono" required>
+      </label>
+      <label id="commit">
+        <input type="text" name="commit" placeholder="Escriba su consulta..." required>
+      </label>
+      <button type="submit">Enviar</button>
+    </form>
+
+  </main>
+
+
   <script type="module" src="/main.js"></script>
 </body>
 
