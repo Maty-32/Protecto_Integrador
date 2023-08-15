@@ -1,210 +1,330 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demian Store</title>
+    <link rel="icon" href="img/header/logo2.jpeg" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Demian Store</title>
-  <link rel="icon" href="img/header/logo2.jpeg">
-</head>
+  <body>
+    <header class="main-header">
+      <input type="checkbox" id="menu" />
 
-<body>
+      <nav class="nav-bar">
+        <!-- nav-bar -->
+        <ul class="nav-bar__nav-list">
+          <li class="nav-bar__nav-item">
+            <a href="#" class="nav-bar__nav-link">Inicio</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="#" class="nav-bar__nav-link">Alta</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="views/contacto.html" class="nav-bar__nav-link">Contacto</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="#" class="nav-bar__nav-link">Nosotros</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- nav-bar -->
 
-  <header class="main-header">
-    <input type="checkbox" id="menu">
-
-    <nav class="nav-bar"> <!-- nav-bar -->
-      <ul class="nav-bar__nav-list">
-        <li class="nav-bar__nav-item">
-          <a href="#" class="nav-bar__nav-link">Inicio</a>
-        </li>
-        <li class="nav-bar__nav-item">
-          <a href="#" class="nav-bar__nav-link">Alta</a>
-        </li>
-        <li class="nav-bar__nav-item">
-          <a href="views/contacto.html" class="nav-bar__nav-link">Contacto</a>
-        </li>
-        <li class="nav-bar__nav-item">
-          <a href="#" class="nav-bar__nav-link">Nosotros</a>
-        </li>
-      </ul>
-    </nav> <!-- nav-bar -->
-
-    <div class="search-bar"> <!-- search-bar -->
-      <div class="search-bar__logo-container"><img src="img/header/logo.jpeg" alt="Logo Mango"></div>
-      <form action="#" class="search-bar__form-container">
-        <label for="busqueda" class="search-bar__form-label"></label>
-        <input type="search" class="search-bar__form-search" id="busqueda" placeholder="Buscar...">
-        <input type="submit" class="search-bar__form-submit" value="Buscar">
-      </form>
-      <div class="search-bar__carrito-container"><img src="img/header/cart_icon.png" alt=""></div>
-      <div class="menu-toogle">
-        <label for="menu" class="menu-toogle__label">
-          <span class="menu-toogle__top-bread"></span>
-          <span class="menu-toogle__meat"></span>
-          <span class="menu-toogle__bottom-bread"></span>
-        </label>
+      <div class="search-bar">
+        <!-- search-bar -->
+        <div class="search-bar__logo-container">
+          <img src="img/header/logo.jpeg" alt="Logo Mango" />
+        </div>
+        <form action="#" class="search-bar__form-container">
+          <label for="busqueda" class="search-bar__form-label"></label>
+          <input
+            type="search"
+            class="search-bar__form-search"
+            id="busqueda"
+            placeholder="Buscar..."
+          />
+          <input type="submit" class="search-bar__form-submit" value="Buscar" />
+        </form>
+        <div class="search-bar__carrito-container">
+          <img src="img/header/cart_icon.png" alt="" />
+        </div>
+        <div class="menu-toogle">
+          <label for="menu" class="menu-toogle__label">
+            <span class="menu-toogle__top-bread"></span>
+            <span class="menu-toogle__meat"></span>
+            <span class="menu-toogle__bottom-bread"></span>
+          </label>
+        </div>
       </div>
-    </div> <!-- search-bar -->
+      <!-- search-bar -->
+    </header>
+    <!-- main-header -->
 
-  </header> <!-- main-header -->
+    <main>
+      <section class="section-cards">
+        <!-- section-cards -->
+        <header class="section-cards__header">
+          <h1>COLECCION 2023</h1>
+          <p>Se encontraron X productos</p>
+        </header>
 
-  <main>
-    <section class="section-cards"> <!-- section-cards -->
-      <header class="section-cards__header">
-        <h1>COLECCION 2023</h1>
-        <p>Se encontraron X productos</p>
-      </header>
-
-      <div class="cards-container">
-        <a href="#" class="card"> <!-- card -->
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="img/productos/Conjunto-1.png" alt="Conjunto-1">
-            </div>
-            <div class="card__content">
-              <h2 class="card_heading">Outfit green</h2>
-              <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="cards-container">
+          <a href="#" class="card">
+            <!-- card -->
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="img/productos/Conjunto-1.png"
+                  alt="Conjunto-1"
+                />
               </div>
-            </div>
-          </article>
-        </a> <!-- card -->
-
-        <a href="#" class="card"> <!-- card -->
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="img/productos/Conjunto-2.png" alt="Conjunto-2">
-            </div>
-            <div class="card__content">
-              <h2 class="card_heading">Outfiy black/white</h2>
-              <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+              <div class="card__content">
+                <h2 class="card_heading">Outfit green</h2>
+                <div class="card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-        </a> <!-- card -->
+            </article>
+          </a>
+          <!-- card -->
 
-        <a href="#" class="card"> <!-- card -->
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="img/productos/Conjunto-3.png" alt="Conjunto-3">
-            </div>
-            <div class="card__content">
-              <h2 class="card_heading">Outfit Otoño</h2>
-              <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="#" class="card">
+            <!-- card -->
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="img/productos/Conjunto-2.png"
+                  alt="Conjunto-2"
+                />
               </div>
-            </div>
-          </article>
-        </a> <!-- card -->
+              <div class="card__content">
+                <h2 class="card_heading">Outfiy black/white</h2>
+                <div class="card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </a>
+          <!-- card -->
 
-        <a href="#" class="card"> <!-- card -->
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="img/productos/Conjunto-4.png" alt="Conjunto-4">
-            </div>
-            <div class="card__content">
-              <h2 class="card_heading">Outfit brown</h2>
-              <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="#" class="card">
+            <!-- card -->
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="img/productos/Conjunto-3.png"
+                  alt="Conjunto-3"
+                />
               </div>
-            </div>
-          </article>
-        </a> <!-- card -->
+              <div class="card__content">
+                <h2 class="card_heading">Outfit Otoño</h2>
+                <div class="card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </a>
+          <!-- card -->
 
-        <a href="#" class="card"> <!-- card -->
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="img/productos/Conjunto-5.png" alt="Conjunto-5">
-            </div>
-            <div class="card__content">
-              <h2 class="card_heading">Outfit cream</h2>
-              <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="#" class="card">
+            <!-- card -->
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="img/productos/Conjunto-4.png"
+                  alt="Conjunto-4"
+                />
               </div>
-            </div>
-          </article>
-        </a> <!-- card -->
+              <div class="card__content">
+                <h2 class="card_heading">Outfit brown</h2>
+                <div class="card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </a>
+          <!-- card -->
 
-        <a href="#" class="card"> <!-- card -->
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="img/productos/Conjunto-6.png" alt="Conjunto-6">
-            </div>
-            <div class="card__content">
-              <h2 class="card_heading">Outfit summer</h2>
-              <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="#" class="card">
+            <!-- card -->
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="img/productos/Conjunto-5.png"
+                  alt="Conjunto-5"
+                />
               </div>
-            </div>
-          </article>
-        </a> <!-- card -->
+              <div class="card__content">
+                <h2 class="card_heading">Outfit cream</h2>
+                <div class="card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </a>
+          <!-- card -->
 
-        <a href="#" class="card"> <!-- card -->
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="img/productos/Conjunto-7.png" alt="Conjunto-7">
-            </div>
-            <div class="card__content">
-              <h2 class="card_heading">Outfit fuck love</h2>
-              <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="#" class="card">
+            <!-- card -->
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="img/productos/Conjunto-6.png"
+                  alt="Conjunto-6"
+                />
               </div>
-            </div>
-          </article>
-        </a> <!-- card -->
+              <div class="card__content">
+                <h2 class="card_heading">Outfit summer</h2>
+                <div class="card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </a>
+          <!-- card -->
 
-        <a href="#" class="card"> <!-- card -->
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="img/productos/Conjunto-8.png" alt="Conjunto-8">
-            </div>
-            <div class="card__content">
-              <h2 class="card_heading">Outflit night black</h2>
-              <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="#" class="card">
+            <!-- card -->
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="img/productos/Conjunto-7.png"
+                  alt="Conjunto-7"
+                />
               </div>
-            </div>
-          </article>
-        </a> <!-- card -->
+              <div class="card__content">
+                <h2 class="card_heading">Outfit fuck love</h2>
+                <div class="card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </a>
+          <!-- card -->
 
-        <a href="#" class="card"> <!-- card -->
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="img/productos/Conjunto-9.png" alt="Conjunto-9">
-            </div>
-            <div class="card__content">
-              <h2 class="card_heading">Outflit night white</h2>
-              <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="#" class="card">
+            <!-- card -->
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="img/productos/Conjunto-8.png"
+                  alt="Conjunto-8"
+                />
               </div>
-            </div>
-          </article>
-        </a> <!-- card -->
+              <div class="card__content">
+                <h2 class="card_heading">Outflit night black</h2>
+                <div class="card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </a>
+          <!-- card -->
 
-        <a href="#" class="card"> <!-- card -->
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="img/productos/Conjunto-10.png" alt="Conjunto-10">
-            </div>
-            <div class="card__content">
-              <h2 class="card_heading">Outfit casual</h2>
-              <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="#" class="card">
+            <!-- card -->
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="img/productos/Conjunto-9.png"
+                  alt="Conjunto-9"
+                />
               </div>
-            </div>
-          </article>
-        </a> <!-- card -->
+              <div class="card__content">
+                <h2 class="card_heading">Outflit night white</h2>
+                <div class="card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </a>
+          <!-- card -->
+
+          <a href="#" class="card">
+            <!-- card -->
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="img/productos/Conjunto-10.png"
+                  alt="Conjunto-10"
+                />
+              </div>
+              <div class="card__content">
+                <h2 class="card_heading">Outfit casual</h2>
+                <div class="card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </a>
+          <!-- card -->
+        </div>
+      </section>
+      <!-- section-cards -->
+    </main>
+    <footer>
+      <div class="footer__sell">
+        <h2>Venta por mayor y menor</h2>
+        <div class="footer__sell__shipping">
+          <div>
+            <h3>Envios a todo el pais</h3>
+          </div>
+          <div>
+            <h3>Paga como quieras</h3>
+          </div>
+        </div>
       </div>
-
-    </section> <!-- section-cards -->
-  </main>
-
-
-
-
-  <script type="module" src="/main.js"></script>
-</body>
-
+      <hr>
+      <div class="footer__nav">
+        <div>
+          <h3>Navegacion</h3>
+          <ul>
+            <li>Inicio</li>
+            <li>Alta</li>
+            <li>Contacto</li>
+            <li>Nosotros</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li>Whatsapp</li>
+            <li>Instagram</li>
+            <li>Mail</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
