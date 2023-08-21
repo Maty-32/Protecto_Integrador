@@ -63,7 +63,7 @@
         }
     @media (min-width: 1024px) {
         & { /* .card */
-            min-width: 240px;
+            min-width: 20px;
         }
     }
 
@@ -71,7 +71,7 @@
         & {
             min-width: 400px;
             max-width: 500px;
-            height: 200px;
+            height: 300px;
         }
 
         &__article { /* .card__article */
@@ -79,13 +79,13 @@
         }
 
         & &__image-container { /* .card .card_image-container */
-            width: 40%;
+            width: 100%;
             clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
         }
 
         &:hover &__image-container, /* .card:hover .card__image-container  */
         &:focus &__image-container { /* .card:focus .card__image-container */
-            width: 40%;
+            width: 100%;
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }
     }
